@@ -120,9 +120,11 @@ a {
   background-color: #FFF;
 }
 .nav-logo {
-  width: 67px;
+  width: 63px;
   height: 20px;
-  background-image: url("../images/logo.svg");
+  margin-left: 5px; 
+  background-image: url("../images/loffi-logo.svg");
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .nav-shop {
