@@ -15,7 +15,7 @@
     <div class="nav">
       <div style="width: 20px"></div>
       <div class="nav-logo"></div>
-      <a href="https://kickstarter.com"><div class="nav-shop"></div></a>
+      <a href="https://kickstarter.com" target="_blank"><div class="nav-shop"></div></a>
     </div>
     <div style="height: 60px"></div>
     <div class="content">
@@ -53,7 +53,7 @@ $$ |  $$ |$$$$$$$$\ $$ |  $$ | $$$$$$  |
           text-shadow: 0 0 22px rgba(0,0,0,0.50);
         }
         .kickstarter-button {
-          background-image: url('images/kickstarter-button.png');
+          background-image: url('images/kickstarter-button@2x.png');
           background-size: contain;
           background-repeat: no-repeat;  
           color: #FFFFFF;
@@ -62,8 +62,8 @@ $$ |  $$ |$$$$$$$$\ $$ |  $$ | $$$$$$  |
           border-radius: 4px;
           margin-top: 24px;
           margin-left: 8px;
-          width: 200px;
-          height: 84px;
+          width: 216px;
+          height: 99px;
           text-align: center;
         }
         .hero-copy>a {
@@ -132,12 +132,12 @@ $$ |  $$ |$$$$$$$$\ $$ |  $$ | $$$$$$  |
             A new, high quality cycling glove with a mission. Designed to make journeys happier for everyone.</p>
           <br>
           <p class="mobile-hidden">Send a smile and help<br><span class="spread">#SpreadTheGlove</span></p>
-          <a class="mobile-hidden" href="https://kickstarter.com"><div class="kickstarter-button" ></div></a>
+          <a class="mobile-hidden" href="https://kickstarter.com" target="_blank"><div class="kickstarter-button" ></div></a>
         </div>
       </div>
       
       <div class="mobile-kickstarter">
-        <a href="https://kickstarter.com">
+        <a href="https://kickstarter.com" target="_blank">
           <p>Send a smile and help <br><span class="spread">#SpreadTheGlove</span></p>
           <div class="back-us">Back us now on</div>
           <img class="ks-logo" srcset="images/kickstarter-logo.png 2x" />
@@ -835,12 +835,12 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
               </div>
             </div>
             <div class="kickstarter-badge">
-              <a href="https://www.kickstarter.com"><img srcset="images/kickstarter.png 2x" /></a>
+              <a href="https://www.kickstarter.com" target="_blank"><img srcset="images/kickstarter-badge@2x.png 2x" /></a>
             </div>
           </div>
           <p class="shipping">We’re aiming to ship in November, just in time for Christmas.<br>
               Get your hands on the friendliest glove in town 😁</p>
-          <a class="kickstarter-button-link" href="https://kickstarter.com"><div class="kickstarter-button" ></div></a>
+          <a class="kickstarter-button-link" href="https://kickstarter.com" target="_blank"><div class="kickstarter-button" ></div></a>
         </div>
       </div>
       <!---
@@ -857,9 +857,13 @@ $$ | \_/ $$ |$$ |  $$ |$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ \$$$$$$  |  $$ |
         .mail {
           background-color: #2E2E2E;
           color: white;
-          padding-top: 69px;
+          padding-top: 64px;
           text-align: center; 
           padding-bottom: 10px;
+        }
+        .mail h2 {
+          font-weight: 500;
+          margin-bottom: 30px;
         }
         .mail p {
           max-width: 544px;
@@ -867,7 +871,7 @@ $$ | \_/ $$ |$$ |  $$ |$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ \$$$$$$  |  $$ |
         }
         .signup {
           width: 100%;
-          height: 200px;
+          height: 230px;
         }
       </style>
       <div class="mail">
@@ -900,7 +904,7 @@ $$$$$$\ $$ | \$$ |\$$$$$$  |  $$ |   $$ |  $$ |
           padding-bottom: 52px;
         }
         .insta-row {
-          margin: 51px -10px 0px -10px;
+          margin: 45px -10px 0px -10px;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
@@ -914,6 +918,7 @@ $$$$$$\ $$ | \$$ |\$$$$$$  |  $$ |   $$ |  $$ |
         }
         .social-links img {
           margin: 10px;
+          vertical-align: middle;
         }
         @media (max-width: 748px) {
           .insta-row > img {
