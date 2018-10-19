@@ -663,6 +663,14 @@ $$ |  $$ |$$ |  $$ |$$ |      $$ |      $$ |      $$ |  $$ |   $$ |
           color: white;
           opacity: 1;
         }
+
+        /* Fixes nav bar stutter when scrolling past gallery see - https://stackoverflow.com/questions/34521587/slick-slider-js-fixed-header-overlap-issue-only-in-chrome */
+        .slick-slider .slick-track,
+        .slick-slider .slick-list
+        {
+          transform: none;
+        }
+
       </style>
       <div class="gallery">
         <div class="gallery-image" style="background-image: url('images/gallery/1.jpg')"></div>
