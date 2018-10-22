@@ -33,6 +33,9 @@ a {
   .desktop-white {
     color: white;
   }
+  .desktop-hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 748px) {
