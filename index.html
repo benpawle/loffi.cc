@@ -653,7 +653,16 @@ $$ |  $$ |$$ |  $$\   $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
 $$ |  $$ |\$$$$$$  |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
 \__|  \__| \______/   \__|   \______| \______/ \__|  \__| \______/                                                       
        -->
-      <div class="feature-panel desktop-white">
+      <style>
+        @media (max-width: 748px) {
+          .actions .feature-panel-image {
+            position: static;
+            height: 330px;
+            background-position: 70%;
+          }
+        }
+      </style>
+      <div class="actions feature-panel desktop-white">
         <div class="feature-panel-image" style="background-image: url('images/actions.jpg')"></div>
         <div class="margins">
           <div class="feature-panel-content">
