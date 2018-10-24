@@ -34,13 +34,13 @@ a {
     color: white;
   }
   .desktop-hidden {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (max-width: 748px) {
   .mobile-hidden {
-    display: none;
+    display: none !important;
   }
 }
 .content {
