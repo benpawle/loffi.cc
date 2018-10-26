@@ -31,6 +31,39 @@
 
   </head>
   <body>
+    <style>
+    .nav{
+      height: 67px;
+      width: calc(100% - 56px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px 0 rgba(131,131,131,0.34);
+      z-index: 2;
+      padding: 0px 28px;
+      position: fixed;
+      background-color: #FFF;
+    }
+    .nav-logo {
+      width: 63px;
+      height: 20px;
+      margin-left: 5px; 
+      background-image: url("../images/loffi-logo.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .nav-shop {
+      width: 22px;
+      height: 20px;
+      background-image: url("../images/shop-icon.svg");
+      background-repeat: no-repeat;
+    }
+    @media (max-width: 748px) {
+      .nav {
+        height: 60px;
+      }
+    }
+    </style>
     <div class="nav">
       <div style="width: 20px"></div>
       <div class="nav-logo"></div>
