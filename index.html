@@ -836,71 +836,63 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
         .photo-grid {
           display: flex;
           flex-wrap: wrap;
-          width: 940px;
-          height: 490px;
           justify-content: space-between;
-          align-content: space-between;
+          width: 91.8vw;
+          max-width: 1652px;
           margin: 0 auto;
         }
-        .photo-cell-1 {
-          width: 220px;
-          height: 200px;
+        .photo-grid>div {
           overflow: hidden;
+        }
+        .seperator {
+          width: 100%;
+          height: 1.56vw;
         }
         .photo-cell-2 {
-          width: 220px;
-          height: 200px;
-          background-image: url('images/grid/grid-02.jpg');
-          background-size: contain;
+          background-image: url('images/grid/grid-2.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
         }
-        .photo-cell-3 {
-          width: 460px; 
-          height: 200px;
+        .photo-cell-1, .photo-cell-2, .photo-cell-3 {
+          height: 19.5vw;
+          max-height: 351px;
         }
-        .photo-cell-4 {
-          width: 460px;
-          height: 270px;
+        .photo-cell-1, .photo-cell-2, .photo-cell-5, .photo-cell-6{
+          width: 21.5vw;
+          max-width: 387px;
         }
-        .photo-cell-5 {
-          width: 220px;
-          height: 270px;
-          overflow: hidden;
+        .photo-cell-3, .photo-cell-4{
+          width: 45vw;
+          max-width: 810px;
         }
-        .photo-cell-6 {
-          width: 220px;
-          height: 270px; 
+        .photo-cell-4, .photo-cell-5, .photo-cell-6 {
+          height: 26.4vw;
+          max-height: 475px;
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 748px) {
           .photo-grid {
-            width: 290px;
-            height: 625px;
+            width: 90.6VW;
           }
-          .photo-cell-1 {
-            width: 139px;
-            height: 126px;
+          .photo-grid>div {
+            margin-bottom: 3.4vw;
           }
-          .photo-cell-2 {
-            width: 139px;
-            height: 126px;
-            background-image: url('images/grid/grid-02-mobile.jpg');
-            background-size: contain;
-          }
-          .photo-cell-3 {
-            width: 290px; 
-            height: 126px;
+          .seperator {
+            display: none;
           }
           .photo-cell-4 {
-            width: 290px;
-            height: 170px;
             order: 6;
           }
-          .photo-cell-5 {
-            width: 139px;
-            height: 170px;
+          .photo-cell-1, .photo-cell-2, .photo-cell-3 {
+            height: 39vw;
           }
-          .photo-cell-6 {
-            width: 139px;
-            height: 170px; 
+          .photo-cell-1, .photo-cell-2, .photo-cell-5, .photo-cell-6{
+            width: 43.4vw;
+          }
+          .photo-cell-4, .photo-cell-5, .photo-cell-6 {
+            height: 53vw;
+          }
+          .photo-cell-3, .photo-cell-4{
+            width: 100%;
           }
         }
         .first-run {
@@ -914,7 +906,7 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
         .kickstarter-button-link {
           display: none;
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 748px) {
           .kickstarter-badge {
             display: none;
           }
@@ -932,10 +924,8 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
         }
       </style>
       <div class="invest">
-        <div class="margins">
           <h2>Invest in a cause.</h2>
           <p class="first-run">Glove is brand new. After 2 years of product development (and waving!) we’ve just launched a Kickstarter campaign to fund the first production run.</p>
-          <div>
             <div class="photo-grid">
             <div class="photo-cell-1">
                 <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/HighVainAoudad-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
@@ -950,6 +940,7 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
                   <source src="https://giant.gfycat.com/MatureAngryClingfish.mp4" type="video/mp4" class="mp4source">
                 </video>
               </div>
+              <div class="seperator"></div>
               <div class="photo-cell-4">
                 <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/ValidRawFoxhound-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="https://giant.gfycat.com/ValidRawFoxhound.webm" type="video/webm" class="webmsource">
@@ -972,11 +963,9 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
             <div class="kickstarter-badge">
               <a href="https://www.kickstarter.com/projects/711642209/glove-for-happier-safer-cycling" target="_blank"><img srcset="images/kickstarter-badge@2x.png 2x" /></a>
             </div>
-          </div>
           <p class="shipping">We’re aiming to ship in November, just in time for Christmas.<br>
               Get your hands on the friendliest glove in town 😁</p>
           <a class="kickstarter-button-link" href="https://www.kickstarter.com/projects/711642209/glove-for-happier-safer-cycling" target="_blank"><div class="kickstarter-button" ></div></a>
-        </div>
       </div>
       <!---
 $$\      $$\  $$$$$$\  $$$$$$\ $$\       $$\       $$$$$$\  $$$$$$\ $$$$$$$$\ 
