@@ -192,7 +192,7 @@ $$ |  $$ |$$$$$$$$\ $$ |  $$ | $$$$$$  |
             margin-top: 20px;
           }
           .ks-logo {
-            margin-top: 5px;
+            margin-top: 15px;
           }
         }
       </style>
@@ -211,8 +211,7 @@ $$ |  $$ |$$$$$$$$\ $$ |  $$ | $$$$$$  |
       <div class="mobile-kickstarter">
         <a href="https://www.kickstarter.com/projects/711642209/glove-for-happier-safer-cycling" target="_blank">
           <p>Send a smile and help <br><span class="spread">#SpreadTheGlove</span></p>
-          <div class="back-us">Back us now on</div>
-          <img class="ks-logo" srcset="images/kickstarter-logo.png 2x" />
+          <img class="ks-logo" srcset="images/get-glove-outline@2x.png 2x" />
         </a>
       </div>
 
@@ -280,15 +279,45 @@ $$ |   $$ |  $$ |  $$ |  $$ |$$ |      $$ /  $$ |
         .as-seen-icon {
           margin: 0 30px;
         }
+        @media (max-width: 748px) {
+          .as-seen-row {
+            flex-wrap: wrap;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 46px;
+          }
+          .as-seen-icon {
+            margin: 12px 20px;
+          }
+          #as-seen-1 {
+            order: 1;
+          }          
+          #as-seen-2 {
+            order: 3;
+          }
+          #as-seen-3 {
+            order: 4;
+          }
+          #as-seen-4 {
+            order: 2;
+          }
+        }
       </style>
 
       <div class="as-seen-section">
         <div class="as-seen-title">As seen in</div>
-        <div class="as-seen-row">
-          <img class="as-seen-icon" srcset="images/as-seen/de-zeen@2x.png 2x"/>
-          <img class="as-seen-icon" srcset="images/as-seen/gcn@2x.png 2x"/>
-          <img class="as-seen-icon" srcset="images/as-seen/look-mum@2x.png 2x"/>
-          <img class="as-seen-icon" srcset="images/as-seen/road-cc@2x.png 2x"/>
+        <div class="as-seen-row mobile-hidden">
+          <img class="as-seen-icon" id="as-seen-1" srcset="images/as-seen/de-zeen@2x.png 2x"/>
+          <img class="as-seen-icon" id="as-seen-2" srcset="images/as-seen/gcn@2x.png 2x"/>
+          <img class="as-seen-icon" id="as-seen-3" srcset="images/as-seen/look-mum@2x.png 2x"/>
+          <img class="as-seen-icon" id="as-seen-4" srcset="images/as-seen/road-cc@2x.png 2x"/>
+        </div>
+        <div class="as-seen-row desktop-hidden">
+          <img class="as-seen-icon" id="as-seen-1" srcset="images/as-seen/de-zeen-mobile@2x.png 2x"/>
+          <img class="as-seen-icon" id="as-seen-2" srcset="images/as-seen/gcn-mobile@2x.png 2x"/>
+          <img class="as-seen-icon" id="as-seen-3" srcset="images/as-seen/look-mum-mobile@2x.png 2x"/>
+          <img class="as-seen-icon" id="as-seen-4" srcset="images/as-seen/road-cc-mobile@2x.png 2x"/>
         </div>
       </div>
 
