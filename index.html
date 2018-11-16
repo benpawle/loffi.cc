@@ -63,12 +63,26 @@
       background-image: url("../images/shop-icon.svg");
       background-repeat: no-repeat;
     }
+    .nav-shop-text {
+      font-size: 20px;
+      color: #00E8DB;
+      letter-spacing: 0;
+      text-align: center;
+      text-decoration: none;
+    }
+    .nav a {
+      text-decoration: none;
+    }
     </style>
     <div class="nav" >
       <div class="nav-content">
-        <div style="width: 20px"></div>
+        <div style="width: 20px" class="desktop-hidden"></div>
+        <div style="width: 47px" class="mobile-hidden"></div>
         <div class="nav-logo"></div>
-        <a href="https://loffi-cc.myshopify.com/"><div class="nav-shop"></div></a>
+        <a href="https://loffi-cc.myshopify.com/">
+          <div class="nav-shop desktop-hidden"></div>
+          <div class="nav-shop-text mobile-hidden">Store</div>
+        </a>
       </div>
     </div>
     <div style="height: 60px"></div>
@@ -112,15 +126,15 @@ $$ |  $$ |$$$$$$$$\ $$ |  $$ | $$$$$$  |
           text-shadow: 0 0 22px rgba(0,0,0,0.50);
         }
         .kickstarter-button {
-          background-image: url('images/kickstarter-button@2x.png');
+          background-image: url('images/get-glove-button@2x.png');
           background-size: contain;
           background-repeat: no-repeat;  
           color: #FFFFFF;
           display: block;
           border-radius: 4px;
           margin-top: 24px;
-          width: 216px;
-          height: 99px;
+          width: 232px;
+          height: 80px;
           text-align: center;
         }
         .hero-copy>a {
@@ -223,7 +237,7 @@ $$ |   $$ |  $$ |  $$ |  $$ |$$ |      $$ /  $$ |
           width: 78vw;
           height: 43.875vw;
           margin-top: 10px;
-          margin-bottom: 95px;
+          margin-bottom: 75px;
         }
         @media (max-width: 748px) {
           .video-section {
@@ -246,6 +260,35 @@ $$ |   $$ |  $$ |  $$ |  $$ |$$ |      $$ /  $$ |
             <iframe id="ytplayer" type="text/html" width="100%" height="100%"
             src="https://www.youtube.com/embed/JzBE5xw_Jsc"
             frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <style>
+        .as-seen-title {
+          font-size: 20px;
+          color: #2E2E2E;
+          letter-spacing: 0;
+          text-align: center;
+          margin-bottom: 26px;
+        }
+        .as-seen-row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 80px;
+        }
+        .as-seen-icon {
+          margin: 0 30px;
+        }
+      </style>
+
+      <div class="as-seen-section">
+        <div class="as-seen-title">As seen in</div>
+        <div class="as-seen-row">
+          <img class="as-seen-icon" srcset="images/as-seen/de-zeen@2x.png 2x"/>
+          <img class="as-seen-icon" srcset="images/as-seen/gcn@2x.png 2x"/>
+          <img class="as-seen-icon" srcset="images/as-seen/look-mum@2x.png 2x"/>
+          <img class="as-seen-icon" srcset="images/as-seen/road-cc@2x.png 2x"/>
         </div>
       </div>
 
@@ -829,6 +872,7 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
           text-align: center;
           position: relative;
           padding-top: 30px;
+          margin-bottom: 84px;
         }
         .kickstarter-badge {
           position: relative;
@@ -931,48 +975,102 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
       </style>
       <div class="invest">
         <h2>Invest in a cause.</h2>
-        <p class="first-run">Glove is brand new. After 2 years of product development (and waving!) we’ve just launched a Kickstarter campaign to fund the first production run.</p>
+        <p class="first-run">Glove is brand new. After 2 years of product development (and waving!) we’ve just closed our Kickstarter campaign which was over 500% over-funded!</p>
           <div class="photo-grid">
           <div class="photo-cell-1">
-              <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/HighVainAoudad-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="https://giant.gfycat.com/HighVainAoudad.webm" type="video/webm" class="webmsource">
-                <source src="https://giant.gfycat.com/HighVainAoudad.mp4" type="video/mp4" class="mp4source">
-              </video>
-            </div>
-            <div class="photo-cell-2"></div>
-            <div class="photo-cell-3">
-              <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/MatureAngryClingfish-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="https://giant.gfycat.com/MatureAngryClingfish.webm" type="video/webm" class="webmsource">
-                <source src="https://giant.gfycat.com/MatureAngryClingfish.mp4" type="video/mp4" class="mp4source">
-              </video>
-            </div>
-            <div class="seperator"></div>
-            <div class="photo-cell-4">
-              <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/ValidRawFoxhound-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="https://giant.gfycat.com/ValidRawFoxhound.webm" type="video/webm" class="webmsource">
-                <source src="https://giant.gfycat.com/ValidRawFoxhound.mp4" type="video/mp4" class="mp4source">
-              </video>
-            </div>
-            <div class="photo-cell-5">
-              <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/IncomparableBlankAfricanelephant-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="https://giant.gfycat.com/IncomparableBlankAfricanelephant.webm" type="video/webm" class="webmsource">
-                <source src="https://giant.gfycat.com/IncomparableBlankAfricanelephant.mp4" type="video/mp4" class="mp4source">
-              </video>
-            </div>
-            <div class="photo-cell-6">
-              <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/AccomplishedIllustriousGlassfrog-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="https://giant.gfycat.com/AccomplishedIllustriousGlassfrog.webm" type="video/webm" class="webmsource">
-                <source src="https://giant.gfycat.com/AccomplishedIllustriousGlassfrog.mp4" type="video/mp4" class="mp4source">
-              </video>
-            </div>
+            <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/HighVainAoudad-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="https://giant.gfycat.com/HighVainAoudad.webm" type="video/webm" class="webmsource">
+              <source src="https://giant.gfycat.com/HighVainAoudad.mp4" type="video/mp4" class="mp4source">
+            </video>
           </div>
-          <div class="kickstarter-badge">
-            <a href="https://www.kickstarter.com/projects/711642209/glove-for-happier-safer-cycling" target="_blank"><img srcset="images/kickstarter-badge@2x.png 2x" /></a>
+          <div class="photo-cell-2"></div>
+          <div class="photo-cell-3">
+            <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/MatureAngryClingfish-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="https://giant.gfycat.com/MatureAngryClingfish.webm" type="video/webm" class="webmsource">
+              <source src="https://giant.gfycat.com/MatureAngryClingfish.mp4" type="video/mp4" class="mp4source">
+            </video>
           </div>
-        <p class="shipping">We’re aiming to ship in November, just in time for Christmas.<br>
-            Get your hands on the friendliest glove in town 😁</p>
-        <a class="kickstarter-button-link" href="https://www.kickstarter.com/projects/711642209/glove-for-happier-safer-cycling" target="_blank"><div class="kickstarter-button" ></div></a>
+          <div class="seperator"></div>
+          <div class="photo-cell-4">
+            <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/ValidRawFoxhound-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="https://giant.gfycat.com/ValidRawFoxhound.webm" type="video/webm" class="webmsource">
+              <source src="https://giant.gfycat.com/ValidRawFoxhound.mp4" type="video/mp4" class="mp4source">
+            </video>
+          </div>
+          <div class="photo-cell-5">
+            <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/IncomparableBlankAfricanelephant-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="https://giant.gfycat.com/IncomparableBlankAfricanelephant.webm" type="video/webm" class="webmsource">
+              <source src="https://giant.gfycat.com/IncomparableBlankAfricanelephant.mp4" type="video/mp4" class="mp4source">
+            </video>
+          </div>
+          <div class="photo-cell-6">
+            <video class="gfy-video" autoplay="" loop="" playsinline="" muted="" poster="https://thumbs.gfycat.com/AccomplishedIllustriousGlassfrog-poster.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="https://giant.gfycat.com/AccomplishedIllustriousGlassfrog.webm" type="video/webm" class="webmsource">
+              <source src="https://giant.gfycat.com/AccomplishedIllustriousGlassfrog.mp4" type="video/mp4" class="mp4source">
+            </video>
+          </div>
+        </div>
       </div>
+      <!--
+$$$$$$\ $$\   $$\  $$$$$$\ $$$$$$$$\  $$$$$$\  
+\_$$  _|$$$\  $$ |$$  __$$\\__$$  __|$$  __$$\ 
+  $$ |  $$$$\ $$ |$$ /  \__|  $$ |   $$ /  $$ |
+  $$ |  $$ $$\$$ |\$$$$$$\    $$ |   $$$$$$$$ |
+  $$ |  $$ \$$$$ | \____$$\   $$ |   $$  __$$ |
+  $$ |  $$ |\$$$ |$$\   $$ |  $$ |   $$ |  $$ |
+$$$$$$\ $$ | \$$ |\$$$$$$  |  $$ |   $$ |  $$ |
+\______|\__|  \__| \______/   \__|   \__|  \__|
+      -->
+      <style>
+          .insta {
+            background-color: #F2F2F2;
+            text-align: center;
+            padding-top: 72px;
+            padding-bottom: 52px;
+          }
+          .insta-row {
+            margin: 45px -10px 0px -10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .insta-row > img {
+            box-shadow: 0px 7px 49px -13px rgba(0,0,0,0.57);
+            margin: 10px;
+          }
+          .social-links {
+            margin-top: 40px;
+          }
+          .social-links img {
+            margin: 10px;
+            vertical-align: middle;
+          }
+          @media (max-width: 748px) {
+            .insta-row > img {
+              box-shadow: 0px 7px 49px -13px rgba(0,0,0,0);
+              margin: 10px;
+            }
+          }
+        </style>
+        <div class="insta">
+          <div class="margins">
+            <h2>@loffi.cc</h2>
+            <a href="https://www.instagram.com/loffi.cc/?hl=en">
+              <div class="insta-row">
+                <img srcset="images/insta/01.jpg 2x" />
+                <img srcset="images/insta/02.jpg 2x" />
+                <img srcset="images/insta/03.jpg 2x" />
+                <img srcset="images/insta/04.jpg 2x" />
+              </div>
+            </a>
+            <div class="social-links">
+              <a href="https://twitter.com/loffi_cc"><img src="images/twitter.svg" /></a>
+              <a href="https://www.facebook.com/loffi.cc"><img src="images/facebook.svg" /></a>
+              <a href="https://www.instagram.com/loffi.cc/?hl=en"><img src="images/insta.svg" /></a>
+            </div>
+          </div>
+        </div>
+  
       <!---
 $$\      $$\  $$$$$$\  $$$$$$\ $$\       $$\       $$$$$$\  $$$$$$\ $$$$$$$$\ 
 $$$\    $$$ |$$  __$$\ \_$$  _|$$ |      $$ |      \_$$  _|$$  __$$\\__$$  __|
@@ -1015,65 +1113,6 @@ $$ | \_/ $$ |$$ |  $$ |$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ \$$$$$$  |  $$ |
             <iframe class="signup" src="signup.html"></iframe>
         </div>
 
-      </div>
-      <!--
-$$$$$$\ $$\   $$\  $$$$$$\ $$$$$$$$\  $$$$$$\  
-\_$$  _|$$$\  $$ |$$  __$$\\__$$  __|$$  __$$\ 
-  $$ |  $$$$\ $$ |$$ /  \__|  $$ |   $$ /  $$ |
-  $$ |  $$ $$\$$ |\$$$$$$\    $$ |   $$$$$$$$ |
-  $$ |  $$ \$$$$ | \____$$\   $$ |   $$  __$$ |
-  $$ |  $$ |\$$$ |$$\   $$ |  $$ |   $$ |  $$ |
-$$$$$$\ $$ | \$$ |\$$$$$$  |  $$ |   $$ |  $$ |
-\______|\__|  \__| \______/   \__|   \__|  \__|
-      -->
-      <style>
-        .insta {
-          background-color: #F2F2F2;
-          text-align: center;
-          padding-top: 72px;
-          padding-bottom: 52px;
-        }
-        .insta-row {
-          margin: 45px -10px 0px -10px;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        .insta-row > img {
-          box-shadow: 0px 7px 49px -13px rgba(0,0,0,0.57);
-          margin: 10px;
-        }
-        .social-links {
-          margin-top: 40px;
-        }
-        .social-links img {
-          margin: 10px;
-          vertical-align: middle;
-        }
-        @media (max-width: 748px) {
-          .insta-row > img {
-            box-shadow: 0px 7px 49px -13px rgba(0,0,0,0);
-            margin: 10px;
-          }
-        }
-      </style>
-      <div class="insta">
-        <div class="margins">
-          <h2>@loffi.cc</h2>
-          <a href="https://www.instagram.com/loffi.cc/?hl=en">
-            <div class="insta-row">
-              <img srcset="images/insta/01.jpg 2x" />
-              <img srcset="images/insta/02.jpg 2x" />
-              <img srcset="images/insta/03.jpg 2x" />
-              <img srcset="images/insta/04.jpg 2x" />
-            </div>
-          </a>
-          <div class="social-links">
-            <a href="https://twitter.com/loffi_cc"><img src="images/twitter.svg" /></a>
-            <a href="https://www.facebook.com/loffi.cc"><img src="images/facebook.svg" /></a>
-            <a href="https://www.instagram.com/loffi.cc/?hl=en"><img src="images/insta.svg" /></a>
-          </div>
-        </div>
       </div>
 
       <!--
