@@ -1028,16 +1028,52 @@ $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ \$$$$$$  |  $$ |
           max-width: 480px;
           margin-left: 8vw;
         }
-        .santa img {
+        .santa-spacer {
+          height: 96px;
+        }
+        .santa-button {
+          background-image: url('images/get-glove-white@2x.png');
+          background-size: contain;
           margin-top: 10px;
           margin-left: 16vw;
+          width: 200px;
+          height: 84px;
+        }
+        @media (max-width: 748px) {
+          .santa {
+            height: unset;
+            max-height: unset;
+            background-image: url('images/santa-mobile@2x.jpg');
+            padding-bottom: 74px;
+          }
+          .santa-spacer {
+            height: 126vw;
+          }
+          .santa-message {
+            font-size: 20px;
+            color: #2E2E2E;
+            letter-spacing: 0.34px;
+            text-align: center;
+            line-height: 30px;
+            width: 280px;
+            margin: 0 auto;
+          }
+          .santa-button {
+            background-image: url('images/get-glove-mobile@2x.png');
+            background-size: contain;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 228px;
+            height: 94px;
+          }
         }
       </style>
 
       <div class="santa">
-        <div style="height: 96px"></div>
+        <div class="santa-spacer" style=""></div>
         <div class="santa-message">Get your hands on the friendliest gloves in town, just in time for Christmas.  😁</div>
-        <a href="https://loffi-cc.myshopify.com/"><img srcset="images/get-glove-white@2x.png 2x"/></a>
+        <a href="https://loffi-cc.myshopify.com/"><div class="santa-button"></div></a>
 
       </div>
 
