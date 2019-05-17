@@ -29,10 +29,29 @@
     <meta property="og:description" content="Say hello to Glove - a new, high quality cycling glove designed to make waving more meaningful." />
     <meta property="og:image" content="https://loffi.cc/images/thumbs-twitter-card.jpg" />
 
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '468065177096288'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" 
+      src="https://www.facebook.com/tr?id=468065177096288&ev=PageView
+      &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <script>
-    if ( window.location.protocol != "https:") {
+    if ( window.location.protocol != "https:" && window.location.hostname != "localhost") {
       window.location.protocol = "https:"
     }
     </script>
